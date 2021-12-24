@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_8Svx3531eTpyMCF457sXQ');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_uru31co', 'template_a4x3wxf', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    <title>Lesson 24/25/26</title>
+    <link rel="stylesheet" href="/assets/CSS/normalize.css">
+    <link rel="stylesheet" href="/assets/CSS/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__top">
+                    
+                    <img class="vanta" src="/assets/img/logo_valanta.png" alt="">
+                    <img class="linia" src="/assets/img/Rectangle 59.png" alt="">
+                    <div class="links_language">
+                        <div class="language ua">
+                            <a href="#">UA</a>
+                        </div>
+                        
+                        <div class="language ru">
+                            <a class="ru" href="#">RU</a>
+                        </div>
+                            
+                        
+                        
+                    </div>
+                    <img class="linia" src="/assets/img/Rectangle 59.png" alt="">
+                <div class="course">
+                    <p>USD 28,90</p>
+                    <p>EUR 35,00</p>
+                </div>
+                <img class="linia" src="/assets/img/Rectangle 59.png" alt="">
+                        <div class="links_sites">
+                            <a href="https://www.facebook.com/"><img src="/assets/img/facebook 1.png" alt=""></a>
+                            <a href="https://www.instagram.com/"><img src="/assets/img/instagram (1) 1.png" alt=""></a>
+                            <a href="https://www.youtube.com/"><img src="/assets/img/youtube 1.png" alt=""></a>
+                        </div>
+                        <img class="linia" src="/assets/img/Rectangle 59.png" alt="">
+                            <div class="tel">
+                                <b><p>044-537-20-07</p></b>
+                                <b><p>068-537-20-07</p></b>
+                                
+                            </div>
+                            <img class="smartphone" src="/assets/img/smartphone 1.png" alt="">
+                            <img class="linia" src="/assets/img/Rectangle 59.png" alt="">
+                       
+                        <form class="header__form" action="">
+                            <input class="maistra" type="text" placeholder="MAISTRA ONLINE">
+                            <input class="turu" type="text" placeholder="ТУРЫ ONLINE">
+                            
+                        </form>
+                        
+                </div>
+                </div>
+                </div>
+                <hr>
+                <div class="container">
+                    <div class="header__inner">
+                      
+                            
+            <div class="nav__inner">
+                <nav class="nav">
+                    <img src="/assets/img/Vector.png" alt="">
+                        <p>Отели</p> 
+                        <p>Страны</p>
+                        <p>Авиа</p>
+                        <p>Каталог туров</p>
+                        <p>Агентам</p>
+                        <p>О нас</p>
+                        <p>Блог</p>
+                        <p>FAQ</p>
+                        <p>Контакты</p>
+                    </ul>
+
+                </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+        <div class="intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <div class="intro__text">
+                        <h2>От 300 € за сутки</h2>
+                    </div>
+                    <div class="intro__title">
+                        <h1>НОВЫЙ ЭКО-ОТЕЛЬ MASTILA НА О. ХВАР В ХОРВАТИИ</h1>
+                    </div>
+                    <a href="#" class="intro__btn">Подробнее</a>
+
+                </div>
+            </div>
+        </div>
+            <div class="about">
+                <div class="container">
+                    <div class="about__inner">
+                        <div class="about__top">
+                            <h2 class="about__item">
+                                ВАШ ТУРОПЕРАТОР ВЫСОКОГО УРОВНЯ ОБСЛУЖИВАНИЯ.
+                            </h2>
+                            <p class="about__text">
+                                Откройте мир путешествий заново.
+                            </p>
+                            <div class="btn">
+                                <a href="#" class="about__btn">
+                                    Что мы предлагаем?
+                                </a>
+                                <a href="#" class="about__btn">
+                                    Консультация
+                                </a>
+                            </div>
+                        </div>
+                        <div class="about__bottom">
+                            <ul class="about__list">
+                                <li><img class="about__icon" src="/assets/img/Group 245.png" alt="">ИНДИВИДУАЛЬНЫЙ ПОДХОД</li>
+                                <li><img class="about__icon" src="/assets/img/Group 246.png" alt="">КОНСЬЕРЖ-СЕРВИС</li>
+                                <li><img class="about__icon" src="/assets/img/Group 247.png" alt="">ОТДЫХ ПРЕМИУМ-КЛАССА</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="hotel">
+                <div class="container">
+                    <div class="hotel__top">
+                        <h2 class="hotel__title">ЛУЧШИЕ ОТЕЛИ</h2>
+                        <img class="hotel__img__img" src="/assets/img/Group 248.png" alt="">
+                        <img class="hotel__hr" src="/assets/img/Rectangle 219.png" alt="">
+                        <a href="#" class="hotel__btn about__btn">Все отели</a>
+                    </div>
+                </div>
+                <div class="hotel__inner">
+                    <div class="hotel__cards">
+                        <div class="hotel__card">
+                            
+                            <img class="hotel__img" src="/assets/img/01_Valamar-Dubrovnik-President-Beach-Night_Dean-Tosovic_Valamar_riviera_dd 1.png" alt="">
+                            <img class="border" src="/assets/img/Rectangle 93.png" alt="">
+                            <div class="card__lable">
+                                Портонови, Черногория
+                            </div>
+                            <div class="hotel__content">
+                                <div class="hotel__stars">
+                                    <img class="star" src="/assets/img/Vector10.png" alt="">
+                                    <img class="star" src="/assets/img/Vector10.png" alt="">
+                                    <img class="star" src="/assets/img/Vector10.png" alt="">
+                                    <img class="star" src="/assets/img/Vector10.png" alt="">
+                                </div>
+                                <div class="hotel__text">
+                                    ONE&ONLY PORTNOVI
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel__card">
+                            
+                            <img class="hotel__img" src="/assets/img/Mask Group.png" alt="">
+                            <img class="border__2" src="/assets/img/Rectangle 93.png" alt="">
+                            <div class="card__lable">
+                                Ровінь, п-в Істра
+                            </div>
+                            <div class="hotel__content">
+                                <div class="hotel__stars">
+                                    <img class="star" src="/assets/img/Vector10.png" alt="">
+                                    <img class="star" src="/assets/img/Vector10.png" alt="">
+                                    <img class="star" src="/assets/img/Vector10.png" alt="">
+                                    <img class="star" src="/assets/img/Vector10.png" alt="">
+                                    <img class="star" src="/assets/img/Vector10.png" alt="">
+                                </div>
+                                <div class="hotel__text__2">
+                                    <p>ЗИМОВКА В REGENT PORTO MONTENEGRO</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hotel__card">
+                            
+                            <img class="hotel__img" src="/assets/img/Mask Group (2).png" alt="">
+                            <img class="border" src="/assets/img/Rectangle 93.png" alt="">
+                            <div class="card__lable">
+                                Бока Котор, Черногория
+                            </div>
+                            <div class="hotel__content">
+                                <div class="hotel__stars">
+                                    <img class="star" src="/assets/img/Vector10.png" alt="">
+                                    <img class="star" src="/assets/img/Vector10.png" alt="">
+                                    <img class="star" src="/assets/img/Vector10.png" alt="">
+                                    <img class="star" src="/assets/img/Vector10.png" alt="">
+                                </div>
+                                <div class="hotel__text__3">
+                                    <p>ЛEЧЕНИЕ В NAFTALAN С АВИА КИЕВ-ЗАГРЕБ-КИЕВ</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="tour">
+                <div class="container__tour">
+                    <div class="tour__top">
+                        <h2 class="tour__title">АКТУАЛЬНЫЕ ТУРЫ</h2>
+                        <img class="tour__hr" src="/assets/img/Rectangle 219.png" alt="">
+                        <a href="#" class="toure__btn about__btn">Все туры</a>
+                    
+                </div>
+                <div class="cards">
+                <div class="card__tour">
+                    <div class="card_top">
+                        <img src="/assets/img/mandarina 2.png" alt="">
+                    </div>
+                     
+                    
+                           <div class="card__lable__tour">
+                                Портонови, Черногория
+                            </div>
+                    <div class="card__content">
+                        <h2 class="content__tour">ONE&ONLY PORTNOVI</h2>
+                        <p>первый ультрароскошный курорт One&Only в Европе</p>
+                    </div>
+                    <img class="hr" src="/assets/img/Rectangle 219.png" alt="">
+                    <div class="div"></div>
+                    <div class="div">
+                        <div class="card__bottom__left"><p class="price1" >от 818 €</p>
+                        <p class="p111">за номер в сутки в сезон</p>
+                    </div>
+                        
+                    
+                    <div class="card__bottom__right">
+                        <p class="price111">от 3 ночей </p>
+                        <p class="price111">с 01 мая 2021</p>
+                    </div>  </div>
+                </div>
+                    
+                
+                <div class="card__tour">
+                    <div class="card_top">
+                        <img src="/assets/img/Mask Group (9).png" alt="">
+                    </div>
+                     
+                    
+                           <div class="card__lable__tour__1">
+                            Ровінь, п-в Істра
+                            </div>
+                    <div class="card__content">
+                        <h2 class="content__tour__1">Зимовка в REGENT PORTO MONTENEGRO</h2>
+                        <p>це втілення високого стилю, в якому поєднується зручність...</p>
+                    </div>
+                    <img class="hr" src="/assets/img/Rectangle 219.png" alt="">
+                    <div class="div">
+                    <div class="card__bottom__left"><p class="price1" >от 938 €</p>
+                        <p class="p111">з особи</p>
+                    </div>
+                       
+                    
+                    <div class="card__bottom__right">
+                        <p class="price111">от 3 ночей </p>
+                        <p class="price111">с 01 мая 2021</p>
+                    </div>
+                    </div> </div>
+              
+                <div class="card__tour">
+                    <div class="card_top">
+                        <img class="img10" src="/assets/img/Mask Group.png" alt="">
+                    </div>
+                     
+                    
+                           <div class="card__lable__tour">
+                                <p>Бока Котор, Черногория </p> 
+                            </div>
+                            
+                    <div class="card__content">
+                        <h2 class="content__tour__2">Лечение в Naftalan с авиа Киев-Загреб-Киев</h2>
+                        <p>первый бренд, воплотивший оригинальную концепцию пляжных...</p>
+                    </div>
+                    <img class="hr" src="/assets/img/Rectangle 219.png" alt="">
+                    <div class="div">
+                        <div class="card__bottom__left"><p class="price1" >от 175 €</p>
+                        <p class="p111">за номер в сутки</p>
+                    </div>
+                        
+                    
+                    <div class="card__bottom__right">
+                        <p class="price111">от 3 ночей </p>
+                        <p class="price111">с 01 мая 2021</p>
+                    </div>  </div>
+                        
+                     </div>
+                    <div class="card__bottom">
+                </div>
+                    
+                
+            
+            </div>
+        </div>
+            </div>
+            <div class="travel">
+                <div class="travel__top">
+                    <img class="travel__img" src="/assets/img/Mask Group (90).png" alt="">
+                    <p class="travel__txt">TRAVEL</p>
+                    <p class="comments__txt">что такое путешествия с valanta travel company?</p>
+                    <img class="bottom__img" src="/assets/img/Group 177.png" alt="">   
+                </div>
+            </div>
+            
+            <div class="forms">
+                <div class="forms__top">
+                    <div class="forms__div">
+                        <img  class="form__img" src="/assets/img/Mask Group (99).png" alt="">
+                    </div>
+                    <p class="forms__text">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА</p>
+                    <p class="p__text">Оставьте данные прямо сейчас, и мы свяжемся с вами в ближайшее время</p>
+                    <img class="group__269" src="/assets/img/Group 269.png" alt="">
+
+
+                </div>
+                
+
+
+
+
+
+            <form class="form1" action="" id="contact-form">
+                <input type="hidden" name="contact_number">
+                <input  class="inputs " type="text" name="name" placeholder="Имя">
+                <input  class="inputs " type="email" name="reply_to" placeholder="Email">
+                <input  class="inputs " type="number" name="phone" placeholder="Телефон">
+                <button class="inputs1 " type="submit"><b> Отправить</b></button>
+            </form>
+        </div>
+            
+        </body>
+</html>
